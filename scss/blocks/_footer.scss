@@ -1,0 +1,134 @@
+.footer {
+  width: 87%;
+  margin: 0 auto;
+  margin-top: 73px;
+  // border: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+  &__logo {
+    img {
+      margin-bottom: 38px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 135%;
+    }
+  }
+  &__menu {
+    list-style: none;
+    li {
+      &:first-child {
+        margin-bottom: 36px;
+        a {
+          color: var(--dark-grey, #101d23);
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 135%;
+          letter-spacing: 0.5px;
+        }
+      }
+      a {
+        text-decoration: none;
+        color: var(--dark-grey, #101d23);
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 120%;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  &__contact {
+    h5 {
+      color: var(--dark-grey, #101d23);
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 135%;
+      letter-spacing: 0.5px;
+      margin-bottom: 36px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 120%;
+      letter-spacing: 0.5px;
+      i {
+        color: orangered;
+        padding-right: 10px;
+      }
+    }
+  }
+  &__contact-social {
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    i {
+      font-size: 25px;
+      &:nth-child(1) {
+        color: #1877f2;
+      }
+      &:nth-child(2) {
+        color: #4680c2;
+      }
+      &:nth-child(3) {
+        width: 28px;
+        display: flex;
+        font-size: 18px;
+        justify-content: center;
+        align-items: center;
+        height: 28px;
+        border-radius: 50%;
+
+        background-color: #ff0000;
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width:760px) {
+  .footer {
+      &__logo {
+          img {
+              margin-bottom: 33px;
+          }
+          p {
+              font-size: 12px;
+          }
+      }
+      &__menu {
+          li{
+              &:nth-child(1) {
+                  margin-bottom: 33px;
+                  a {
+                      font-style: 17px;
+                  }
+              }
+              a{
+                  font-size: 12px;
+              }
+          }
+      }
+      &__contact {
+          h5 {
+              font-size: 17px;
+              margin-bottom: 31px;
+          }
+          p {
+              &:nth-child(4) {
+                  margin-top: 40px;
+              }
+          }
+      }
+  }
+}
+
+@media screen and (max-width:540px) {
+  .footer {
+          .hide {
+              display: none;
+          }
+  }
+}

@@ -1,0 +1,23 @@
+@import './blocks/all-blocks';
+@import './default';
+@import './fonts';
+@import './normalize';
+@import './variables';
+@import './mixin';
+
+.interpan {
+    width: 1320px;
+    margin: 0 auto;
+    & > hr{
+        margin-top: 48px;
+      }
+      & > p {
+        color: var(--date-blog, #8e8f9b);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 135%;
+        width: 87%;
+        margin: 0 auto;
+        padding: 27px 0 34px 0;
+      }
+}

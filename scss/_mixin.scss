@@ -1,0 +1,15 @@
+@mixin btn{
+    border-radius: 20px;
+    color: orangered;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid orangered;
+    background-color: #fff;
+    transition: all .5s ease-in-out;
+    &:hover {
+        background-color: orangered;
+        color: #fff;
+        cursor: pointer;
+    }
+}
